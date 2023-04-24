@@ -50,7 +50,7 @@
     }
     try {
       const response = await fetch.get(
-        `http://localhost:3000?poet=${poet}&topic=${topic}&mood=${mood}`,
+        `http://localhost:3000/api?poet=${poet}&topic=${topic}&mood=${mood}`,
         { headers: { authorization: openAIKey } }
       );
 
